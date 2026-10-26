@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+
+# Local environment / secrets (StaveRift needs none, but never commit these)
+.env
+
+# Local store copies produced by hand or by the demo
+staverift-demo-*/
+demo-store.json

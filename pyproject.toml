@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "staverift"
+version = "1.0.0"
+description = "Typed coopering jobs, a stave diameter calculator and a clamp time log."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "StaveRift" }]
+keywords = ["cooperage", "barrel", "cli", "time-tracking"]
+classifiers = [
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.scripts]
+staverift = "staverift:main"
+
+[tool.setuptools]
+py-modules = ["staverift"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

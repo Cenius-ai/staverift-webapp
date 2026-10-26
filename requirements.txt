@@ -1,0 +1,4 @@
+# StaveRift ships with no runtime dependencies: the tool is one file and uses
+# only the Python standard library. This manifest pins the test runner so
+# `python3 -m pytest -q` works from a clean checkout.
+pytest==9.1.1
